@@ -5,7 +5,7 @@ const { CryptoBlock } = require("./Block");
 class CryptoBlockchain {
     constructor() {
         this.blockchain = [this.startGenesisBlock()];
-        this.difficulty = 1;
+        this.difficulty = 3;
     }
     startGenesisBlock() {
         return new CryptoBlock(0, "24/05/2022", "Initial Block in the Chain", "0");
